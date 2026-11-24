@@ -99,4 +99,4 @@ Machine-readable form: [`CITATION.cff`](CITATION.cff).
 
 ## Licence
 
-Text and data: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Quoted sentences belong to the authors of the papers they come from. See [`LICENSE.md`](LICENSE.md).
+Text and data: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Quoted sentences belong to the authors of the papers they come from. Full licence text: [`LICENSE`](LICENSE); credit line and notes: [`NOTICE.md`](NOTICE.md).
