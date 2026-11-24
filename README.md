@@ -77,15 +77,19 @@ $ tail -n +2 data/papers.tsv | cut -f11 | sort | uniq -c | sort -rn
       5 holds
 ```
 
-Claims about frontier models, by direction (`tier` is column 9 and `direction` is column 5 of `claims.tsv`):
+`trend` comes from each paper's abstract, judged by a small model, and 825 of 874 state nothing. The 24 papers with a stated direction are a lead, not a finding.
+
+Measured claims about frontier models, by direction (`tier` is column 9, `measured` is column 6 and `direction` is column 5 of `claims.tsv`). This matches the page's chart "Measured claims about frontier models, by period":
 
 ```
-$ tail -n +2 data/claims.tsv | awk -F'\t' '$9=="frontier"{print $5}' | sort | uniq -c | sort -rn
-    739 harness-helps
-    440 not-applicable
-    145 harness-hurts
-     99 harness-no-effect
+$ tail -n +2 data/claims.tsv | awk -F'\t' '$9=="frontier" && $6=="measured"{print $5}' | sort | uniq -c | sort -rn
+    727 harness-helps
+    399 not-applicable
+    143 harness-hurts
+     98 harness-no-effect
 ```
+
+Read with care. "Helps" mixes three things: a higher score, a lower cost and better repeatability. The tier is the reader's judgment of the models, not the paper's label, and many papers call strong open models frontier. Authors mostly score their own systems, and a count of claims is not a count of independent results.
 
 ## Found a mistake?
 
