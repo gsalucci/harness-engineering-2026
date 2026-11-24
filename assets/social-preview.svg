@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="Inter Variable, Inter, DejaVu Sans, sans-serif">
+  <rect width="1280" height="640" fill="#f3f6f7"/>
+  <g font-size="82" font-weight="800" fill="#13222b" letter-spacing="-2">
+    <text x="116" y="200">Is harness engineering</text>
+    <text x="116" y="292">dead for big models?</text>
+  </g>
+  <rect x="120" y="352" width="318" height="68" rx="14" fill="#f8dce5" stroke="#b0204c" stroke-width="2.5"/>
+  <text x="279" y="396" font-size="30" font-weight="700" fill="#b0204c" text-anchor="middle">Dead in 7 places</text>
+  <rect x="462" y="352" width="230" height="68" rx="14" fill="#d6f0ea" stroke="#0a7767" stroke-width="2.5"/>
+  <text x="577" y="396" font-size="30" font-weight="700" fill="#0a7767" text-anchor="middle">Alive in 7</text>
+  <text x="120" y="487" font-size="28" fill="#6b7f89">874 papers from 2026, read and judged by language models. Data included.</text>
+  <text x="120" y="556" font-size="20" fill="#6b7f89">gsalucci.github.io/harness-engineering-2026</text>
+</svg>

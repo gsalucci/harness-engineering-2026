@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this study or its data, please cite it as below."
+title: "Is harness engineering dead for big models?"
+type: dataset
+authors:
+  - family-names: Salucci
+    given-names: Giancarmine
+date-released: 2026-11-24
+url: https://gsalucci.github.io/harness-engineering-2026/
+repository-code: https://github.com/gsalucci/harness-engineering-2026
+license: CC-BY-4.0
+abstract: "A study of 874 papers published between 5 March and 15 November 2026, 870 of them read in full, on what the program around a language model (the harness) still decides when the model is a strong one. It holds 4,267 claims and 4,378 designs, each with a word-for-word quote, 539 design patterns and 334 judged ideas. The papers say the harness is dead in seven places, alive in seven, and split in one. Language models did the reading, extraction and judging; no person re-read the tables."
+keywords:
+  - harness engineering
+  - language model agents
+  - literature study
+  - dataset

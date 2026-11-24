@@ -1,0 +1,24 @@
+name: Something in the data or the page is wrong
+description: A wrong row in a table, a wrong sentence on the page, or a broken link.
+labels: ["data-error"]
+body:
+  - type: textarea
+    id: where
+    attributes:
+      label: Where
+      description: The file and row (for example `data/claims.tsv`, the paper identifier and the claim), or the sentence on the page.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What is wrong
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: The evidence
+      description: The paper's sentence quoted word for word, or a link, that shows the error.
+    validations:
+      required: true

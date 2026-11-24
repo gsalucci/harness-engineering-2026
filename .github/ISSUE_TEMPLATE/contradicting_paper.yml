@@ -1,0 +1,41 @@
+name: A paper contradicts a verdict
+description: A paper you know of measures something that disagrees with a verdict on the page.
+labels: ["contradicting-paper"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A report is checked against the tables. Please quote the paper; a link alone is not enough to check.
+  - type: textarea
+    id: verdict
+    attributes:
+      label: The idea or verdict concerned
+      description: Quote it as written on the page or in the `idea` column of `data/ideas.tsv`.
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: The paper
+      description: An arXiv number or a link.
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The sentence or result that contradicts it
+      description: Quote the paper word for word, with the page or table number if you have it.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Model tier measured
+      options:
+        - frontier
+        - mid
+        - small
+        - mixed
+        - not stated
+    validations:
+      required: true
