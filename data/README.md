@@ -89,4 +89,11 @@ Five tab-separated files sit beside the page. They hold 874 papers; 4,267 measur
 - A quote being found shows the sentence exists, not that it supports the claim.
 - Identifiers starting with `ext-` are sources outside arXiv.
 
+## How the papers were collected
+
+- arXiv: the public listing interface was searched over first-version dates from 1 March to 17 November 2026, in two-month windows, with these queries: "harness engineering"; "agent harness"; "agentic harness"; "coding agent" together with harness; "evaluation harness" together with agent; "model harness"; harness in the title together with agent or LLM in the abstract; "agent scaffold" or "agent scaffolding".
+- A candidate was kept only if its title or abstract contains "harness" or "scaffold" and, judged by a language model from title and abstract, harnesses or scaffolds for language-model agents are a main subject. Other uses of the word (wiring, hardware test rigs) were dropped.
+- 37 papers come from outside arXiv, found by web search (OpenReview, ACL Anthology, open-access items of the ACM Digital Library and IEEE Xplore, Semantic Scholar, Zenodo, SSRN, TechRxiv, technical reports), and only where a PDF was openly available.
+- This is a keyword collection, not a complete census: a paper about agent harnesses that uses none of these words is missing. The exact query list differed slightly between date windows.
+
 By Giancarmine Salucci. Last updated 24 November 2026. Licence: Creative Commons Attribution 4.0 International, https://creativecommons.org/licenses/by/4.0/. Quoted sentences belong to the authors of the papers they come from.

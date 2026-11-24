@@ -47,6 +47,8 @@ Split: reasoning effort.
 
 874 papers (837 from arXiv, 37 from other sources) were published between 5 March and 15 November 2026 and fetched between 1 March and 17 November 2026. 870 were read in full. They yielded 4,267 claims and 4,378 designs, each with a word-for-word quote, and 539 design patterns. 334 ideas were judged one topic at a time: 269 survived, 42 are contested, 14 stale, 6 unmeasured and 3 superseded.
 
+How the papers were collected: keyword searches of arXiv's public listing ("harness engineering", "agent harness", "agentic harness", "agent scaffold" and similar) over first-version dates from 1 March to 17 November 2026. A candidate was kept only if its title or abstract contains "harness" or "scaffold" and a language model, reading title and abstract, judged agent harnesses a main subject. 37 papers come from outside arXiv, found by web search and kept only with an openly available PDF. A keyword search is not a census: a paper that uses none of those words is missing. [`data/README.md`](data/README.md) has the details.
+
 Language models did the reading, the extraction and the judging. A script checked that each quote exists in its paper and found about 97 percent. A quote found in its paper shows the sentence exists, not that it supports the claim. No person re-read the tables. Authors mostly score their own systems. Three "dead" verdicts have contested neighbouring ideas. This is the author's collection of papers, not a complete census. The last section of the page lists every limit; read it before quoting a number.
 
 The page is one file, `index.html`. It loads the GSAP animation library from cdnjs and its fonts from Google Fonts, and nothing else.
